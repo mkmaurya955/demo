@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sending SMS using PHP</title>
+	<title>Sending SMS</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<table border="1px solid black" width="" align="center">
+	<tr><td colspan="2" style="text-align: center;background-color: lightgreen"><h1>Message</h1></td></tr>
 <form method="post">
-	<label>Mobile Number</label>
-	<input type="text" name="num">
-	<br><br>
-	<label>Country Code</label>
-	<select name="Code">
+	<tr>
+		<td style="padding: 10px;padding-top: 20px;"><label>Mobile Number:</label></td>
+		<td style="padding: 10px;padding-top: 20px;"><input type="text" name="num" placeholder="Enter your Mobile Number "></td>
+		<br><br>
+	</tr>
+	<tr>
+		<td style="padding: 10px;"><label>Country Code:</label></td>
+	    <td style="padding: 10px;"><select name="Code">
 		<option value="">SELECT Here...</option>
 		<option value="91">India - +91</option>
 		<option value="1">USA - +1</option>
-	</select>
+		</select></td>
+	
 	<br><br>
-	<label>Enter Message</label>
-	<input type="text" name="message">
-
-	<input type="submit" name="submit">
-
+	</tr>
+	<tr><td style="padding: 10px;"><label>Enter Message:</label></td>
+	<td style="padding: 10px;"><textarea type="text" name="message" cols="40" rows="5" placeholder="Enter your Message"></textarea> </td>
+</tr> 
+<tr>
+<td></td>
+<td style="padding: 10px;text-align: right" >
+	<button type="button" name="submit" class="btn btn-success btn-md">Send</button>
+	</td>
+</tr>
 </form>
-
+</table>
 </body>
 </html>
 
